@@ -1,0 +1,72 @@
+body {
+    background-color:#121B26;
+}
+
+#github_link {
+    color: white;
+    font-size: 20px;
+}
+
+#container {
+    background-color:#900C3F;
+    border: 4px solid #ffffff;
+    border-radius:20px;
+    height: 245px;
+    width: 600px;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#guesses_container {
+    background-color:#900C3F;
+    border: 4px solid #ffffff;
+    border-radius: 20px;
+    height: 400px;
+    width: 800px;
+    margin: auto;
+    margin-top: 30px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+p {
+    color: white;
+    font-size: 22px;
+}
+
+#title {
+    font-size: 28px;
+}
+
+#credits {
+    font-size: 18px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+#userInput {
+    font-size: 16px;
+    width: 150px;
+    height: 20px;
+    margin: px auto;
+}
+
+#btn {
+    font-size: 16px;
+    text-align: center;
+    width: 60px;
+    height: 25px;
+    margin: auto auto auto 10px;
+}
+
+#guess_info_container {
+    display: flex;
+    justify-content: center;
+}
+
+#team, #role, #agent1, #agent2, #agent3 {
+    margin-top: 25px;
+    margin-right: 20px;
+    margin-left: 20px;
+    width: 100px;
+}
