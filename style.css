@@ -9,7 +9,7 @@ body {
 
 #container {
     background-color:#900C3F;
-    border: 4px solid #ffffff;
+    border: 4px solid #000000;
     border-radius:20px;
     height: 245px;
     width: 600px;
@@ -20,7 +20,7 @@ body {
 
 #guesses_container {
     background-color:#900C3F;
-    border: 4px solid #ffffff;
+    border: 4px solid #000000;
     border-radius: 20px;
     height: 400px;
     width: 800px;
