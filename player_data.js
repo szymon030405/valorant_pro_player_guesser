@@ -2,6 +2,7 @@ const valid_players = [
     {
         name: "TenZ",
         team: "Sentinels",
+        region: "Americas",
         role: "Duelist",
         agent1: "Jett",
         agent2: "KAY/O",
@@ -10,6 +11,7 @@ const valid_players = [
     {
         name: "Sacy",
         team: "Sentinels",
+        region: "Americas",
         role: "Initiator",
         agent1: "Skye",
         agent2: "Fade",
@@ -19,6 +21,7 @@ const valid_players = [
     {
         name: "saadhak",
         team: "LOUD",
+        region: "Americas",
         role: "Flex",
         agent1: "KAY/O",
         agent2: "Raze",
@@ -27,6 +30,7 @@ const valid_players = [
     {
         name: "tuyz",
         team: "LOUD",
+        region: "Americas",
         role: "Controller",
         agent1: "Omen",
         agent2: "Harbor",
@@ -35,6 +39,7 @@ const valid_players = [
     {
         name: "cauanzin",
         team: "LOUD",
+        region: "Americas",
         role: "Initiator",
         agent1: "Skye",
         agent2: "Sova",
@@ -43,6 +48,7 @@ const valid_players = [
     {
         name: "Less",
         team: "LOUD",
+        region: "Americas",
         role: "Sentinel",
         agent1: "Viper",
         agent2: "Killjoy",
@@ -51,6 +57,7 @@ const valid_players = [
     {
         name: "aspas",
         team: "LOUD",
+        region: "Americas",
         role: "Duelist",
         agent1: "Jett",
         agent2: "Neon",
@@ -60,6 +67,7 @@ const valid_players = [
     {
         name: "nAts",
         team: "Team Liquid",
+        region: "EMEA",
         role: "Sentinel",
         agent1: "Cypher",
         agent2: "Killjoy",
@@ -68,6 +76,7 @@ const valid_players = [
     {
         name: "soulcas",
         team: "Team Liquid",
+        region: "EMEA",
         role: "Initiator",
         agent1: "Fade",
         agent2: "KAY/O",
@@ -76,6 +85,7 @@ const valid_players = [
     {
         name: "Sayf",
         team: "Team Liquid",
+        region: "EMEA",
         role: "Duelist",
         agent1: "Jett",
         agent2: "Raze",
@@ -84,6 +94,7 @@ const valid_players = [
     {
         name: "Redgar",
         team: "Team Liquid",
+        region: "EMEA",
         role: "Controller",
         agent1: "Omen",
         agent2: "Brimstone",
@@ -92,6 +103,7 @@ const valid_players = [
     {
         name: "Jamppi",
         team: "Team Liquid",
+        region: "EMEA",
         role: "Initiator",
         agent1: "Skye",
         agent2: "Breach",
@@ -101,6 +113,7 @@ const valid_players = [
     {
         name: "Boaster",
         team: "FNATIC",
+        region: "EMEA",
         role: "Controller",
         agent1: "Astra",
         agent2: "Brimstone",
@@ -109,6 +122,7 @@ const valid_players = [
     {
         name: "Chronicle",
         team: "FNATIC",
+        region: "EMEA",
         role: "Flex",
         agent1: "Viper",
         agent2: "Breach",
@@ -117,6 +131,7 @@ const valid_players = [
     {
         name: "Leo",
         team: "FNATIC",
+        region: "EMEA",
         role: "Initiator",
         agent1: "Fade",
         agent2: "Skye",
@@ -125,6 +140,7 @@ const valid_players = [
     {
         name: "Derke",
         team: "FNATIC",
+        region: "EMEA",
         role: "Duelist",
         agent1: "Raze",
         agent2: "Jett",
@@ -133,6 +149,7 @@ const valid_players = [
     {
         name: "Alfajer",
         team: "FNATIC",
+        region: "EMEA",
         role: "Sentinel",
         agent1: "Killjoy",
         agent2: "Cypher",
@@ -142,6 +159,7 @@ const valid_players = [
     {
         name: "Jinggg",
         team: "PRX",
+        region: "Pacific",
         role: "Duelist",
         agent1: "Raze",
         agent2: "Phoenix",
@@ -150,6 +168,7 @@ const valid_players = [
     {
         name: "mindfreak",
         team: "PRX",
+        region: "Pacific",
         role: "Controller",
         agent1: "Astra",
         agent2: "Brimstone",
@@ -158,6 +177,7 @@ const valid_players = [
     {
         name: "f0rsakeN",
         team: "PRX",
+        region: "Pacific",
         role: "Flex",
         agent1: "Harbour",
         agent2: "Neon",
@@ -166,6 +186,7 @@ const valid_players = [
     {
         name: "d4v41",
         team: "PRX",
+        region: "Pacific",
         role: "Flex",
         agent1: "Skye",
         agent2: "Viper",
@@ -174,6 +195,7 @@ const valid_players = [
     {
         name: "something",
         team: "PRX",
+        region: "Pacific",
         role: "Duelist",
         agent1: "Jett",
         agent2: "Reyna",
@@ -182,7 +204,8 @@ const valid_players = [
 
     {
         name: "Boostio",
-        team: "Evil Geniuses",
+        team: "EG",
+        region: "Americas",
         role: "Sentinel",
         agent1: "Killjoy",
         agent2: "Astra",
@@ -190,7 +213,8 @@ const valid_players = [
     },
     {
         name: "C0M",
-        team: "Evil Geniuses",
+        team: "EG",
+        region: "Americas",
         role: "Initiator",
         agent1: "Sova",
         agent2: "Viper",
@@ -198,7 +222,8 @@ const valid_players = [
     },
     {
         name: "JAWGEMO",
-        team: "Evil Geniuses",
+        team: "EG",
+        region: "Americas",
         role: "Flex",
         agent1: "Raze",
         agent2: "Omen",
@@ -206,7 +231,8 @@ const valid_players = [
     },
     {
         name: "Ethan",
-        team: "Evil Geniuses",
+        team: "EG",
+        region: "Americas",
         role: "Initiator",
         agent1: "Skye",
         agent2: "Breach",
@@ -214,7 +240,8 @@ const valid_players = [
     },
     {
         name: "Demon1",
-        team: "Evil Geniuses",
+        team: "EG",
+        region: "Americas",
         role: "Duelist",
         agent1: "Jett",
         agent2: "Brimstone",
@@ -224,6 +251,7 @@ const valid_players = [
     {
         name: "crashies",
         team: "NRG",
+        region: "Americas",
         role: "Initiator",
         agent1: "Skye",
         agent2: "Sova",
@@ -232,6 +260,7 @@ const valid_players = [
     {
         name: "ardiis",
         team: "NRG",
+        region: "Americas",
         role: "Duelist",
         agent1: "Jett",
         agent2: "Killjoy",
@@ -240,6 +269,7 @@ const valid_players = [
     {
         name: "Victor",
         team: "NRG",
+        region: "Americas",
         role: "Flex",
         agent1: "Killjoy",
         agent2: "Raze",
@@ -248,6 +278,7 @@ const valid_players = [
     {
         name: "FNS",
         team: "NRG",
+        region: "Americas",
         role: "Flex",
         agent1: "Viper",
         agent2: "Breach",
@@ -256,6 +287,7 @@ const valid_players = [
     {
         name: "s0m",
         team: "NRG",
+        region: "Americas",
         role: "Controller",
         agent1: "Harbour",
         agent2: "Omen",
@@ -265,6 +297,7 @@ const valid_players = [
     {
         name: "MaKo",
         team: "DRX",
+        region: "Pacific",
         role: "Controller",
         agent1: "Viper",
         agent2: "Omen",
@@ -273,6 +306,7 @@ const valid_players = [
     {
         name: "stax",
         team: "DRX",
+        region: "Pacific",
         role: "Initiator",
         agent1: "Skye",
         agent2: "Breach",
@@ -281,6 +315,7 @@ const valid_players = [
     {
         name: "Rb",
         team: "DRX",
+        region: "Pacific",
         role: "Flex",
         agent1: "Killjoy",
         agent2: "Harbour",
@@ -289,6 +324,7 @@ const valid_players = [
     {
         name: "Zest",
         team: "DRX",
+        region: "Pacific",
         role: "Flex",
         agent1: "Sova",
         agent2: "Fade",
@@ -297,6 +333,7 @@ const valid_players = [
     {
         name: "BuZz",
         team: "DRX",
+        region: "Pacific",
         role: "Duelist",
         agent1: "Jett",
         agent2: "Killjoy",
