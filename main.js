@@ -29,6 +29,19 @@ btn.addEventListener('click', function() {
     let input_guess = document.getElementById('userInput').value;
     let isValidPlayer = false;
 
+    function check_if_valid(player) {
+        if (player.name.toLowerCase() == input_guess.toLowerCase()) {
+            isValidPlayer = true;
+        }
+    }
+
+    valid_players.forEach(check_if_valid);
+
+    if (isValidPlayer == false) {
+        outputtext.innerHTML = 'The player you guessed does not exist (maybe typo)'
+        return
+    }
+
     if (guessedCorrectly == true) {
         return
     }
@@ -70,7 +83,8 @@ btn.addEventListener('click', function() {
     agent3 = guessInfoContainer.querySelector('#agent3');
 
     if (input_guess.toLowerCase() == random_player_name.toLowerCase()) {
-        output.innerHTML = 'Correct, you guessed the right player';
+        output.innerHTML = `Correct, you guessed the right player in ${guess_number} guesses!`;
+        guesstext.innerHTML = 'Refresh the page to play again!'
         guessedCorrectly = true
     } else if (input_guess.toLowerCase() != random_player_name.toLowerCase()) {
         output.innerHTML = 'You did not guess the right player';
@@ -78,8 +92,6 @@ btn.addEventListener('click', function() {
 
     function search_dicts(player) {
         if (player.name.toLowerCase() == input_guess.toLowerCase()) {
-            isValidPlayer = true;
-
             if (player.name == random_player_name) {
                 player_name.style.backgroundColor = "#4caf50";
             }
@@ -141,13 +153,4 @@ btn.addEventListener('click', function() {
     }
 
     valid_players.forEach(search_dicts);
-
-    if (isValidPlayer) {
-        guesstext.innerHTML = 'The player you guessed is a valid player'
-    }
-    else {
-        guesstext.innerHTML = 'The player you guessed is not a valid player'
-        
-    }
-
 });
