@@ -30,6 +30,14 @@ btn.addEventListener('click', function() {
     let input_guess = document.getElementById('userInput').value;
     let isValidPlayer = false;
     let playerAlreadyGuessed = false;
+    
+    console.log(guess_number)
+
+    if (guess_number == 5) {
+        output.innerHTML = 'You ran out of guesses!'
+        guesstext.innerHTML = `Mystery player: ${random_player_name}`;
+        return
+    }
 
     function check_if_valid(player) {
         if (player.name.toLowerCase() == input_guess.toLowerCase()) {
@@ -56,12 +64,6 @@ btn.addEventListener('click', function() {
     }
 
     guess_number = guess_number + 1
-
-    if (guess_number > 5) {
-        output.innerHTML = 'You ran out of guesses!'
-        guesstext.innerHTML = `Mystery player: ${random_player_name}`;
-        return
-    }
 
     counter.innerHTML = `${guess_number}/5`;
 
