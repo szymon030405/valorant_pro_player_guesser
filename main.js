@@ -24,10 +24,12 @@ const random_player_agents = [random_player.agent1, random_player.agent2, random
 console.log(random_player_name, random_player_team, random_player_role)
 
 let guess_number = 0
+let guessed_players = []
 
 btn.addEventListener('click', function() {
     let input_guess = document.getElementById('userInput').value;
     let isValidPlayer = false;
+    let playerAlreadyGuessed = false;
 
     function check_if_valid(player) {
         if (player.name.toLowerCase() == input_guess.toLowerCase()) {
@@ -43,6 +45,13 @@ btn.addEventListener('click', function() {
     }
 
     if (guessedCorrectly == true) {
+        return
+    }
+
+    // CHECK IF THE USER ALREADY GUESSED THIS PLAYER
+    playerAlreadyGuessed = guessed_players.includes(input_guess.toLowerCase())
+    if (playerAlreadyGuessed == true) {
+        outputtext.innerHTML = 'You already guessed this player, try a new one'
         return
     }
 
@@ -92,6 +101,8 @@ btn.addEventListener('click', function() {
 
     function search_dicts(player) {
         if (player.name.toLowerCase() == input_guess.toLowerCase()) {
+            guessed_players.push(player.name.toLowerCase())
+
             if (player.name == random_player_name) {
                 player_name.style.backgroundColor = "#4caf50";
             }
