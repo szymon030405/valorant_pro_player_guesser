@@ -6,7 +6,7 @@ let counter = document.getElementById('counter')
 let player_name = document.getElementById('name');
 let team = document.getElementById('team');
 let region = document.getElementById('region')
-let role = document.getElementById('role');
+let role_box = document.getElementById('role_box');
 let agent1 = document.getElementById('agent1');
 let agent2 = document.getElementById('agent2');
 let agent3 = document.getElementById('agent3');
@@ -30,8 +30,10 @@ btn.addEventListener('click', function() {
     let input_guess = document.getElementById('userInput').value;
     let isValidPlayer = false;
     let playerAlreadyGuessed = false;
-    
-    console.log(guess_number)
+
+    if (guessedCorrectly == true) {
+        return
+    }
 
     if (guess_number == 5) {
         output.innerHTML = 'You ran out of guesses!'
@@ -52,14 +54,10 @@ btn.addEventListener('click', function() {
         return
     }
 
-    if (guessedCorrectly == true) {
-        return
-    }
-
     // CHECK IF THE USER ALREADY GUESSED THIS PLAYER
     playerAlreadyGuessed = guessed_players.includes(input_guess.toLowerCase())
     if (playerAlreadyGuessed == true) {
-        outputtext.innerHTML = 'You already guessed this player, try a new one'
+        outputtext.innerHTML = 'You already guessed this player, try another'
         return
     }
 
@@ -87,18 +85,43 @@ btn.addEventListener('click', function() {
 
     player_name = guessInfoContainer.querySelector('#name');
     team = guessInfoContainer.querySelector('#team');
-    role = guessInfoContainer.querySelector('#role');
+    role_box = guessInfoContainer.querySelector('#role_box');
+    role_img = guessInfoContainer.querySelector('#role_img');
     region = guessInfoContainer.querySelector('#region');
     agent1 = guessInfoContainer.querySelector('#agent1');
     agent2 = guessInfoContainer.querySelector('#agent2');
     agent3 = guessInfoContainer.querySelector('#agent3');
+
+    console.log(guess_number)
 
     if (input_guess.toLowerCase() == random_player_name.toLowerCase()) {
         output.innerHTML = `Correct, you guessed the right player in ${guess_number} guesses!`;
         guesstext.innerHTML = 'Refresh the page to play again!'
         guessedCorrectly = true
     } else if (input_guess.toLowerCase() != random_player_name.toLowerCase()) {
-        output.innerHTML = 'You did not guess the right player';
+        output.innerHTML = 'You did not guess the right player, try again';
+    }
+
+    function get_role_logo(player) {
+        logo = ""
+
+        if (player.role == 'Duelist') {
+            logo = "images/Duelist.png"
+        }
+        else if (player.role == 'Initiator') {
+            logo = "images/Initiator.png"
+        }
+        else if (player.role == 'Controller') {
+            logo = "images/Controller.png"
+        }
+        else if (player.role == 'Sentinel') {
+            logo = "images/Sentinel.png"
+        }
+        else if (player.role == 'Flex') {
+            logo = "images/Flex.png"
+        }
+
+        return logo
     }
 
     function search_dicts(player) {
@@ -127,10 +150,10 @@ btn.addEventListener('click', function() {
             }
 
             if (player.role == random_player_role) {
-                role.style.backgroundColor = '#4caf50';
+                role_box.style.backgroundColor = '#4caf50';
             }
             else {
-                role.style.backgroundColor = "#ff2800";
+                role_box.style.backgroundColor = "#ff2800";
             }
 
             if (random_player_agents.includes(player.agent1)) {
@@ -157,7 +180,7 @@ btn.addEventListener('click', function() {
 
             player_name.innerHTML = `${player.name}`;
             team.innerHTML = `${player.team}`;
-            role.innerHTML = `${player.role}`;
+            role_img.src = get_role_logo(player);
             region.innerHTML = `${player.region}`
             agent1.innerHTML = `${player.agent1}`;
             agent2.innerHTML = `${player.agent2}`;

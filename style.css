@@ -86,25 +86,25 @@ p {
 
 #guess_info_container {
     display: none;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: -10px;
 }
 
 #guess2_info_container {
     display: none;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: -10px;
 }
 
 #guess3_info_container {
     display: none;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: -10px;
 }
 
 #guess4_info_container {
     display: none;
-    justify-content: center;
+    justify-content: space-around;
     margin-bottom: -10px;
 }
 
@@ -127,7 +127,11 @@ p {
     justify-content: center;
 }
 
-#name, #team, #role, #region, #agent1, #agent2, #agent3 {
+#agent1_label {
+    margin-left: 90px;
+}
+
+#name, #team, #region, #agent1, #agent2, #agent3 {
     background-color: #000000;
     border: 3px solid #000000;
     border-radius: 20px;
@@ -142,4 +146,28 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#role_box {
+    border: 3px solid #000000;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 120px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#role_img {
+    width: 40px;
+}
+
+#agent1 {
+    margin-left: 80px;
 }
