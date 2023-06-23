@@ -189,4 +189,10 @@ btn.addEventListener('click', function() {
     }
 
     valid_players.forEach(search_dicts);
+
+    if (guess_number == 5 && guessedCorrectly == false) {
+        output.innerHTML = 'You ran out of guesses!'
+        guesstext.innerHTML = `Mystery player: ${random_player_name}`;
+        return
+    }
 });
